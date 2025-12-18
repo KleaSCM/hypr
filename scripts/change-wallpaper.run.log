@@ -1,0 +1,8 @@
++ set -e
+++ find /home/klea/Pictures/wallpapers -type f
+++ shuf -n 1
++ WALLPAPER=/home/klea/Pictures/wallpapers/645809f2a1abd9786d2e1ad86fe663a8.jpg
++ '[' -z /home/klea/Pictures/wallpapers/645809f2a1abd9786d2e1ad86fe663a8.jpg ']'
+++ date --iso-8601=seconds
++ echo '2025-12-18T15:31:52+09:00 - change-wallpaper picked: /home/klea/Pictures/wallpapers/645809f2a1abd9786d2e1ad86fe663a8.jpg'
++ swww img /home/klea/Pictures/wallpapers/645809f2a1abd9786d2e1ad86fe663a8.jpg --transition-type fade

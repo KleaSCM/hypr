@@ -8,4 +8,6 @@ if [ -z "$WALLPAPER" ]; then
   exit 1
 fi
 
+echo "$(date --iso-8601=seconds) - change-wallpaper picked: $WALLPAPER" >> /tmp/change-wallpaper.log
+
 swww img "$WALLPAPER" --transition-type fade
